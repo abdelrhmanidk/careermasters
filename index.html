@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <base href="/"> -->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Career Up">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="careerup">
+  <link rel="apple-touch-icon" href="icons/android-chrome-192x192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Set the title of your website -->
+  <title>Career Up</title>
+
+  <link rel="manifest" href="manifest.json">
+
+    <!-- Add Google Sign-In meta tag -->
+    <meta name="google-signin-client_id" content="933724849115-k0rq91gskj7flso1j70ar764go78oalj.apps.googleusercontent.com">
+
+  <!-- Firebase JS SDKs (loaded as modules) -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
+
+
+    
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB2aNYec0c1XfiTKw5oY1-VuSiLkCd9lpk",
+      authDomain: "careerup-1c38c.firebaseapp.com",
+      projectId: "careerup-1c38c",
+      storageBucket: "careerup-1c38c.appspot.com",
+      messagingSenderId: "933724849115",
+      appId: "1:933724849115:web:487fa9a8ad2890c27b1dfe",
+      measurementId: "G-Q4QJRVBETG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth(app);
+  </script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" defer></script>
+</body>
+</html>
